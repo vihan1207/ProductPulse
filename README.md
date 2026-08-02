@@ -1,5 +1,3 @@
----
-
 # 📊 ProductPulse – End‑to‑End Data Pipeline
 
 ## Highlights for Recruiters
