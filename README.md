@@ -1,63 +1,152 @@
-# ProductPulse
-Got it — let’s elevate your README into something that feels polished, professional, and recruiter‑ready. Here’s a refined version that emphasizes clarity, structure, and impact:
-
 ---
 
-# 📊 End-to-End Product Data Pipeline
+# 📊 ProductPulse – End‑to‑End Data Pipeline
 
-## 🚀 Project Overview
-This repository showcases a **modular, portfolio-ready data pipeline** that transforms raw product data into actionable insights and professional reports. Built entirely in Python, the project demonstrates expertise across the full data workflow: **collection → cleaning → analysis → visualization → reporting**.
+## Highlights for Recruiters
+**End‑to‑End Data Pipeline**: Demonstrates the full workflow — collection, cleaning, analysis, visualization, and reporting.
 
-The pipeline is designed with recruiters and collaborators in mind: clean structure, clear documentation, and practical outputs that mirror real-world data engineering and data science tasks.
+** Modular & Professional Design**: Clear folder structure and well‑documented code, mirroring real industry practices.
+
+**Practical Outputs**: Generates clean datasets, insightful charts, and polished Excel/CSV reports recruiters can instantly understand.
+
+**Technical Proficiency**: Showcases skills in Python, BeautifulSoup, Pandas, Matplotlib, and reporting tools.
+
+## 🚀 Overview
+**ProductPulse** is a modular, end‑to‑end data pipeline built in Python that transforms raw product data into clean insights, visualizations, and professional reports.  
+It demonstrates mastery of the complete data workflow — **collection → cleaning → analysis → visualization → reporting** — with a clear, maintainable structure that mirrors real‑world data engineering and analytics practices.
 
 ---
 
 ## 🎯 Purpose
-- To demonstrate the ability to design and implement a **complete data pipeline** from scratch.  
-- To highlight skills in **web scraping, data wrangling, exploratory analysis, visualization, and reporting**.  
-- To provide a **portfolio project** that reflects professional coding practices, modular design, and recruiter-friendly documentation.  
+This project was created to:
+- Showcase a **portfolio‑ready data pipeline** with professional modular design.  
+- Demonstrate proficiency in **web scraping, data cleaning, analysis, visualization, and reporting**.  
+- Provide recruiters and collaborators with a clear view of your technical and organizational skills.  
 
 ---
 
 ## 🗂 Project Structure
-```
-Project-Root\
-|
-|
 
 ```
+ProductPulse/
+│
+├── Data Analysis/
+│   └── analyzer.py                  # Phase 3: Data analysis logic
+│
+├── Data Cleaning/
+│   └── cleaner.py                   # Phase 2: Data cleaning and preprocessing
+│
+├── Data Collection/
+│   ├── collector.py                 # Phase 1: Web scraping and data collection
+│   ├── config.py                    # Configuration settings
+│   ├── parsers.py                   # HTML parsing utilities
+│   ├── storage.py                   # Data storage and handling
+│   └── utils.py                     # Helper functions
+│
+├── Data Reporter/
+│   └── report_generator.py          # Phase 5: Report generation (Excel/CSV)
+│
+├── Data/
+│   ├── Analysis/
+│   │   ├── analysis_results.csv
+│   │   └── analysis_results.xlsx
+│   ├── Cleaned/
+│   │   ├── cleaned_product.json
+│   │   └── debug.json
+│   ├── Processed/
+│   │   └── product_2026-07-15T16_35_36Z.json
+│   ├── Raw/
+│   │   ├── 2026-07-15T16_35_33Z.json
+│   │   └── 2026-07-15T16_35_36Z.json
+│   ├── Report/
+│   │   ├── report.csv
+│   │   └── report.xlsx
+│   └── Visualizations/
+│       ├── average_price.png
+│       └── products_per_source.png
+│
+├── Tests/
+│   ├── test_analyzer.py
+│   ├── test_cleaner.py
+│   ├── test_main.py
+│   └── test_storage.py
+│
+├── Visualization/
+│   └── visualizer.py                # Phase 4: Visualization generation
+│
+├── data_cleaning/
+│   └── cleaner.py                   # Duplicate module reference for organization
+│
+├── LICENSE
+├── README.md
+├── main.py                          # Entry point for running all phases
+└── requirements.txt                 # Dependencies list
+```
+
 ---
 
-## 🔑 Phases
+## 🔑 Phase Breakdown
 
-### Phase 1: Data Collection
-- **Goal**: Scrape raw product data using BeautifulSoup.  
-- **Output**: Structured raw dataset stored in `data/raw/`.
+### **Phase 1 – Data Collection**
+- **Goal:** Scrape raw product data using BeautifulSoup.  
+- **Output:** Structured JSON files stored in `Data/Raw/`.
 
-### Phase 2: Data Cleaning
-- **Goal**: Ensure consistency, handle missing values, and prepare data for analysis.  
-- **Output**: Clean dataset stored in `data/cleaned/`.
+### **Phase 2 – Data Cleaning**
+- **Goal:** Clean and preprocess raw data for consistency and accuracy.  
+- **Output:** Cleaned JSON files stored in `Data/Cleaned/`.
 
-### Phase 3: Data Analysis
-- **Goal**: Perform exploratory analysis with Pandas to uncover trends and insights.  
-- **Output**: Processed results stored in `data/processed/`.
+### **Phase 3 – Data Analysis**
+- **Goal:** Perform exploratory data analysis (EDA) using Pandas.  
+- **Output:** Analytical results saved in CSV and Excel formats under `Data/Analysis/`.
 
-### Phase 4: Data Visualization
-- **Goal**: Create clear, professional charts using Matplotlib.  
-- **Output**: Visualizations saved as `.png` files in `data/visualization/`.
+### **Phase 4 – Data Visualization**
+- **Goal:** Create clear, professional charts using Matplotlib.  
+- **Output:** Visualizations saved in `Data/Visualizations/`.
 
-### Phase 5: Reporting
-- **Goal**: Generate recruiter-friendly reports in Excel and CSV formats.  
-- **Output**: Final reports stored in `data/reports/`.
+#### Example Visualization Output:
+The analysis results are visualized using Matplotlib.  
+Below is an example output showing product distribution across sources:
+
+![Products per Source](Data/Visualizations/products_per_source.png)
+
+Another example showing average product prices:
+
+![Average Price](Data/Visualizations/average_price.png)
+
+
+This chart illustrates product distribution across different sources, providing a quick visual summary of data coverage.
+
+### **Phase 5 – Reporting**
+- **Goal:** Generate final reports in Excel and CSV formats for presentation.  
+- **Output:** Reports stored in `Data/Report/`.
+
+### **Future Improvements**
+- **Phase 6**: Deploy reports via dashboard”) to show forward‑thinking.
 
 ---
 
 ## 🛠 Tech Stack
-- **Python** (core language)  
-- **BeautifulSoup** (web scraping)  
-- **Pandas** (data analysis)  
-- **Matplotlib** (visualization)  
-- **OpenPyXL** (Excel reporting)  
+- **Python** – Core language  
+- **Beautifulsoup** – Web scraping  
+- **Pandas** – Data manipulation and analysis  
+- **Matplotlib** – Visualization  
+- **OpenPyXL** – Excel report generation  
 
+---
 
-Would you like me to also add a **“Highlights for Recruiters” section** at the top (like a quick pitch: *“This project demonstrates X, Y, Z skills recruiters look for”*) so they immediately see your value before diving into details?
+## ⚙️ How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vihan1207/ProductPulse.git
+   cd ProductPulse
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the pipeline:
+   ```bash
+   python main.py
+   ```
+
+---
