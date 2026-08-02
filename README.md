@@ -1,6 +1,6 @@
 # 📊 ProductPulse – End‑to‑End Data Pipeline
 
-## Highlights for Recruiters
+## Highlights
 **End‑to‑End Data Pipeline**: Demonstrates the full workflow — collection, cleaning, analysis, visualization, and reporting.
 
 ** Modular & Professional Design**: Clear folder structure and well‑documented code, mirroring real industry practices.
